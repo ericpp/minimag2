@@ -89,3 +89,18 @@
 
 0xd2 Preamble (0x37)
 0xd3 Postamble (0x38)
+
+0xfa Added fields
+0xfb Customized fields
+0xfc Send sequence?
+  No added/custom fields
+    fa 00
+    fb 00
+    fc 08 00 ff 00 ff 00 ff 00 ff
+
+  Added fields: (0a)\cr
+  Customized fields: (1a)Between: "^"(1) and "^"(1)
+  Sent sequence: 1a0a
+    fa 09 01 0d 00 00 00 00 00 00 00
+    fb 08 f3 20 01 01 5e 01 01 5e
+    fc 0b 00 ff 00 ff 00 ff 03 e3 20 00 ff
